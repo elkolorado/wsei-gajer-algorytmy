@@ -9,19 +9,15 @@ Projekt polega na implementacji algorytmu do rozwiązywania równań sześcienny
 - **Język programowania:** JavaScript
 - **Środowisko uruchomieniowe:** Node.js lub dowolna przeglądarka internetowa wspierająca JavaScript
 
-## Uruchomienie
-
-Aby uruchomić projekt, należy mieć zainstalowane środowisko Node.js. Po sklonowaniu repozytorium, można uruchomić skrypt `cubic-equation.js` za pomocą polecenia:
-
-```bash
-node cubic-equation.js
-```
 
 ## Przykład Użycia
 Przykładowe wywołanie funkcji rozwiązującej równanie sześcienne:
 ```js
-const roots = cubicEquationRoots(1, -4, 2, 2);
-console.log(roots); // Wypisze Roots: [ 3.170086486626033, -0.4811943040920148, 1.3111078174659814 ]
+const CubicEquationSolver = require('./cubic-equation');
+
+const solver = new CubicEquationSolver(1, -1, 1, 1);
+const roots = solver.solve();
+console.log("Roots:", roots); //wypisze Roots: [ -0.5436890126920766 ]
 ```
 
 ## Metoda rozwiązania
