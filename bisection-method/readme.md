@@ -30,7 +30,8 @@ const parameters = [1, -1, -1, -1, -1, 1]; // x^5-x^4-x^3-x^2-x^1+1=0
 // Rozwiąż równanie wielomianowe przy użyciu metody bisekcji
 const roots = bisection.solve(parameters);
 
-console.log('Rzeczywiste pierwiastki:', roots); // zwróci 'Rzeczywiste pierwiastki: [ -1.0000009764490632, 0.531009765738438, 1.8832041016758414 ]'
+console.log('Rzeczywiste pierwiastki:', roots); 
+// zwróci 'Rzeczywiste pierwiastki: [ -1.0000009764490632, 0.531009765738438, 1.8832041016758414 ]'
 ```
 
 ## Metoda rozwiązania
